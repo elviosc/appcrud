@@ -1,0 +1,13 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%SELECT%%> and <%%ENDSELECT%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- add the following to the Posts_init() hook (in hooks/Posts.php file) -->
+<!--     $options->ShowTableHeader = 0;     -->
+
+		<td id="Posts-caregoria_id-<%%VALUE(id)%%>" class="Posts-caregoria_id"><%%SELECT%%><%%VALUE(caregoria_id)%%><%%ENDSELECT%%></td>
+		<td id="Posts-tag_id-<%%VALUE(id)%%>" class="Posts-tag_id"><%%SELECT%%><%%VALUE(tag_id)%%><%%ENDSELECT%%></td>
+		<td id="Posts-title-<%%VALUE(id)%%>" class="Posts-title"><%%SELECT%%><%%VALUE(title)%%><%%ENDSELECT%%></td>
+		<td id="Posts-conteudo-<%%VALUE(id)%%>" class="Posts-conteudo"><%%SELECT%%><%%VALUE(conteudo)%%><%%ENDSELECT%%></td>
+		<td id="Posts-data-<%%VALUE(id)%%>" class="Posts-data"><%%SELECT%%><%%VALUE(data)%%><%%ENDSELECT%%></td>
+		<td id="Posts-midia-<%%VALUE(id)%%>" class="Posts-midia"><%%SELECT%%><img src="<%%BASE_UPLOAD_PATH%%><%%VALUE(midia)%%>" class="img-responsive img-thumbnail"><%%ENDSELECT%%></td>
